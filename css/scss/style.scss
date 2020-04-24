@@ -26,30 +26,30 @@ a {
 .container {
     width: 100%;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
 }
 
 @media (min-width:576px) {
     .container {
-        max-width: 540px
+        max-width: 540px;
     }
 }
 
 @media (min-width:768px) {
     .container {
-        max-width: 720px
+        max-width: 720px;
     }
 }
 
 @media (min-width:992px) {
     .container {
-        max-width: 960px
+        max-width: 960px;
     }
 }
 
 @media (min-width:1200px) {
     .container {
-        max-width: 1140px
+        max-width: 1140px;
     }
 }
 
@@ -65,7 +65,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
+    background-color: $mainblue;
     padding: em(20);
 
     & .logo {
@@ -79,12 +79,15 @@ header {
 }
 
 .main {
+    display: flex;
+    align-items: center;
+    align-self: center;
     text-align: center;
-    background: url('../../images/bg-curvy-desktop.svg');
+    background-color: $mainblue;
+    background-image: url('../../images/bg-curvy-desktop.svg');
     background-repeat: no-repeat;
-    background-size: 100%;
     background-position: center bottom;
-    margin-top: 80px;
+    background-size: 100%;
     height: 1000px;
     
     & .main-text h1 {
@@ -114,5 +117,116 @@ header {
     & a {
         color: $neutral;
     }
+}
+
+.diferencials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.diferencials_items{
+    width: 500px;
+    padding: em(50);
+    & h1, p {
+        color: $neutral;
+        font-family: $body-font;
+    }
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: em(20);
+
+    & h1 {
+        font-size: em(48);
+        color: $neutral;
+        padding-bottom: em(10);
+        line-height: 1;
+        
+    } & p {
+        color: $neutral;
+        font-family: $body-font;
+        line-height: 1.5;
+        padding-bottom: em(10);
+    } & a {
+        color: $Cyan;
+        text-decoration: underline;
+        padding-right: 10px;
+    }
+
+}
+
+@media (max-width: 960px) {
+        .quote {
+            flex-wrap: wrap;
+        }
+}
+
+
+.quote a::after {
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: url('../../images/icon-arrow.svg') no-repeat;
+    margin-left: em(5);
+    transform: translateY(em(2));
+}
+
+// Testimonials
+
+.testimonais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: $cta-font;
+    padding: em(20);
+}
+@media (max-width: 940px) {
+    .testimonais {
+        flex-direction: column;
+    }
+}
+
+
+.testimonial {
+   background-color: #21293c;
+   padding: 30px;
+   border-radius: 10px;
+   flex-basis: 30%;
+   margin-bottom: 20px;
+& .test-text {
+    color: $neutral;
+    text-align: left;
+    padding-bottom: 20px;
+}
+}
+.test-auth {
+    display: flex;
+    flex-direction: row;
+}
+.test-auth-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & p {
+        color: $neutral;
+    }
+    & span {
+        font-weight: $bold;
+        color: $neutral;
+    }
+}
+
+.test-img {
+    border-radius: 50%;
+    margin-right: 10px;
+    height: 50px;
 }
 
