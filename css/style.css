@@ -91,15 +91,23 @@ header {
     font-family: "Raleway", sans-serif;
     line-height: 1.5; }
 
+.main img {
+  width: auto; }
+
+@media (max-width: 960px) {
+  .main img {
+    width: 100%; } }
+
 .btn {
-  padding: 15px 80px;
+  padding: 15px;
   border-radius: 30px;
   background-image: -webkit-gradient(linear, left top, right top, from(#339ecc), to(#65e2d9));
   background-image: linear-gradient(to right, #339ecc, #65e2d9);
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  font-size: 1em;
-  margin-top: 10px; }
+  font-size: 0.875em;
+  width: 200px;
+  cursor: pointer; }
   .btn a {
     color: white; }
 
@@ -134,7 +142,8 @@ header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 1.25em; }
+  padding-top: 5em;
+  padding-bottom: 5em; }
   .quote h1 {
     font-size: 3em;
     color: white;
@@ -149,6 +158,8 @@ header {
     color: #65e2d9;
     text-decoration: underline;
     padding-right: 10px; }
+  .quote img {
+    padding-right: 1.25em; }
 
 @media (max-width: 960px) {
   .quote {
@@ -165,6 +176,20 @@ header {
   -webkit-transform: translateY(0.125em);
   transform: translateY(0.125em); }
 
+.tests {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  margin-bottom: 18.75em;
+  margin-top: 9.375em; }
+
 .testimonais {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,10 +200,14 @@ header {
   flex-direction: row;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   font-family: "Raleway", sans-serif;
-  padding: 1.25em; }
+  padding-top: 1.875em;
+  background: url("../../images/bg-quotes.png") no-repeat; }
 
 @media (max-width: 940px) {
   .testimonais {
@@ -229,3 +258,33 @@ header {
   border-radius: 50%;
   margin-right: 10px;
   height: 50px; }
+
+.news {
+  background-color: #0c1524; }
+
+.newsletter {
+  text-align: center;
+  background-color: #21293c;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  padding: 3.125em;
+  position: relative;
+  top: -150px; }
+  .newsletter h1 {
+    color: white;
+    font-size: 3em;
+    font-family: "Raleway", sans-serif;
+    padding-bottom: 0.3125em; }
+  .newsletter p {
+    color: white;
+    padding-bottom: 1.25em; }
+  .newsletter input {
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 0.875em;
+    margin-right: 0.625em;
+    width: 400px;
+    margin-bottom: 10px; }

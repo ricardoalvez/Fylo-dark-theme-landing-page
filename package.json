@@ -1,22 +1,22 @@
 {
-  "name": "fylo-dark-theme-landing-page",
+  "name": "fylo-dark-theme-landing-page-master",
   "version": "1.0.0",
-  "description": "![Design preview for the Fylo landing page with dark theme and features grid challenge](./design/desktop-preview.jpg)",
+  "description": "",
   "main": "gulpfile.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cli": "^2.2.0",
+    "gulp-sass": "^4.1.0",
+    "surge": "^0.21.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ricardorox/estudos.git"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ricardorox/estudos/issues"
-  },
-  "homepage": "https://github.com/ricardorox/estudos#readme"
+  "license": "ISC"
 }

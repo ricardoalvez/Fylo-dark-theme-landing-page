@@ -53,12 +53,13 @@ a {
     }
 }
 
-
 body {
     font-size: em(14);
     font-family: $body-font;
     background-color: $darkblue;
 }
+
+
 
 header {
     display: flex;
@@ -90,6 +91,7 @@ header {
     background-size: 100%;
     height: 1000px;
     
+    
     & .main-text h1 {
         padding-top: 50px;
         color: $neutral;
@@ -105,15 +107,25 @@ header {
     }
 }
 
+.main img {
+    width: auto;
+}
+@media (max-width: 960px) {
+    .main img {
+       width: 100%;
+    }
+}
+
+
 .btn {
-    padding: 15px 80px;
+    padding: 15px;
     border-radius: 30px;
     background-image: linear-gradient(to right, $Blue, $Cyan);
     font-family: $cta-font;
     font-weight: $regular;
-    font-size: em(16);
-    margin-top: 10px;
-
+    font-size: em(14);
+    width: 200px;
+    cursor: pointer;
     & a {
         color: $neutral;
     }
@@ -140,8 +152,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: em(20);
-
+    padding-top: em(80);
+    padding-bottom: em(80);
     & h1 {
         font-size: em(48);
         color: $neutral;
@@ -157,10 +169,11 @@ header {
         color: $Cyan;
         text-decoration: underline;
         padding-right: 10px;
-    }
+    } & img {
+        padding-right: em(20);
 
 }
-
+}
 @media (max-width: 960px) {
         .quote {
             flex-wrap: wrap;
@@ -179,14 +192,25 @@ header {
 }
 
 // Testimonials
+.tests {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin-bottom: em(300);
+    margin-top: em(150);
+}
 
 .testimonais {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-grow: 0;
     flex-wrap: wrap;
     font-family: $cta-font;
-    padding: em(20);
+    padding-top: em(30);
+    background: url('../../images/bg-quotes.png') no-repeat;
+
 }
 @media (max-width: 940px) {
     .testimonais {
@@ -230,3 +254,37 @@ header {
     height: 50px;
 }
 
+// Newsletter 
+
+.news {
+    background-color: #0c1524;
+}
+
+.newsletter {
+    text-align: center;
+    background-color: #21293c;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+    padding: em(50);
+    position: relative;
+    top: -150px;
+    & h1 {
+        color: $neutral;
+        font-size: em(48);
+        font-family: $cta-font;
+        padding-bottom: em(5);
+    } p {
+        color: $neutral;
+        padding-bottom: em(20);
+        
+    } & input {
+        padding: 15px 30px;
+        border-radius: 30px;
+        font-family: $cta-font;
+        font-weight: $regular;
+        font-size: em(14);
+        margin-right: em(10); 
+        width: 400px;
+        margin-bottom: 10px;
+    }
+}
