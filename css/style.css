@@ -106,15 +106,24 @@ header {
     width: 100%; } }
 
 .btn {
-  padding: 15px;
-  border-radius: 30px;
+  width: 230px;
+  height: 54px;
   background-image: -webkit-gradient(linear, left top, right top, from(#339ecc), to(#65e2d9));
   background-image: linear-gradient(to right, #339ecc, #65e2d9);
-  font-family: "Raleway", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 30px;
   font-weight: 400;
-  font-size: 0.875em;
-  width: 200px;
-  cursor: pointer; }
+  font-size: 1em;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
   .btn a {
     color: white; }
 
@@ -270,14 +279,27 @@ header {
   background-color: #0c1524; }
 
 .newsletter {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
   background-color: #21293c;
   border-radius: 10px;
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   padding: 3.125em;
   position: relative;
-  top: -150px; }
+  top: -120px;
+  width: 60%; }
   .newsletter h1 {
     color: white;
     font-size: 3em;
@@ -286,12 +308,34 @@ header {
   .newsletter p {
     color: white;
     padding-bottom: 1.25em; }
-  .newsletter input {
-    padding: 15px 30px;
+
+.input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .input input {
+    -ms-flex-preferred-size: 400px;
+    flex-basis: 400px;
+    height: 54px;
     border-radius: 30px;
-    font-family: "Raleway", sans-serif;
     font-weight: 400;
-    font-size: 0.875em;
-    margin-right: 0.625em;
-    width: 100%/2;
-    margin-bottom: 10px; }
+    font-size: 1em;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    padding: 1.875em;
+    margin-right: 0.625em; }
+
+footer {
+  background-color: #0c1524; }

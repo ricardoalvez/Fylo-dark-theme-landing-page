@@ -129,14 +129,16 @@ header {
 }
 
 .btn {
-    padding: 15px;
-    border-radius: 30px;
+    width: 230px;
+    height: 54px;
     background-image: linear-gradient(to right, $Blue, $Cyan);
-    font-family: $cta-font;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
     font-weight: $regular;
-    font-size: em(14);
-    width: 200px;
-    cursor: pointer;
+    font-size: em(16);
+    transition: all .3s;
     & a {
         color: $neutral;
     }
@@ -272,13 +274,19 @@ header {
 }
 
 .newsletter {
+    
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    align-content: space-around;
     background-color: #21293c;
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
     padding: em(50);
     position: relative;
-    top: -150px;
+    top: -120px;
+    width: 60%;
     & h1 {
         color: $neutral;
         font-size: em(48);
@@ -287,15 +295,28 @@ header {
     } p {
         color: $neutral;
         padding-bottom: em(20);
-        
-    } & input {
-        padding: 15px 30px;
-        border-radius: 30px;
-        font-family: $cta-font;
-        font-weight: $regular;
-        font-size: em(14);
-        margin-right: em(10); 
-        width: 100%/2;
-        margin-bottom: 10px;
     }
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    & input {
+       
+        flex-basis: 400px;
+        height: 54px;
+        border-radius: 30px;
+        font-weight: $regular;
+        font-size: em(16);
+        transition: all .3s;
+        padding: em(30);
+        margin-right: em(10);
+
+}   
+}
+footer {
+    background-color: #0c1524;
 }
