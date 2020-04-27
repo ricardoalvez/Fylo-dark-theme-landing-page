@@ -220,38 +220,37 @@ header {
 .quote {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: em(80);
     padding-bottom: em(80);
+
 }
 
 .quote-text {
 
-& h1 {
-    font-size: em(48);
-    color: $neutral;
-    padding-bottom: em(10);
-    line-height: 1;
-}
+    & h1 {
+        font-size: em(40);
+        color: $neutral;
+        padding-bottom: em(10);
+        line-height: 1;
 
-& p {
-    color: $neutral;
-    font-family: $body-font;
-    line-height: 1.5;
-    padding-bottom: em(10);
-}
+    }
 
-& a {
-    color: $Cyan;
-    text-decoration: underline;
-    padding-right: 10px;
-}
+    & p {
+        color: $neutral;
+        font-family: $body-font;
+        line-height: 1.5;
+        padding-bottom: em(10);
+    }
 
-& img {
-    padding-right: em(20);
+    & a {
+        color: $Cyan;
+        text-decoration: underline;
+        padding-right: 10px;
+    }
 
 }
-}
+
 @media (max-width: 960px) {
     .quote {
         flex-wrap: wrap;
@@ -272,6 +271,18 @@ header {
 .quote img {
     width: 90%;
     padding-right: em(20);
+    padding-bottom: em(20);
+}
+
+@media (max-width: 540px) {
+    .quote {
+        text-align: center;
+    }
+
+    .quote img {
+        width: 100%;
+        padding-right: 0;
+    }
 }
 
 // Testimonials
@@ -346,10 +357,11 @@ header {
 // Newsletter 
 
 .news {
-    margin-bottom: em(80);
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: em(-100);
 }
 
 .newsletter {
@@ -398,7 +410,7 @@ header {
 
 @media (max-width: 768px) {
     .newsletter {
-        width: 100%;
+        width: 80%;
     }
 }
 
@@ -406,12 +418,97 @@ header {
     .input input {
         margin-right: 0;
     }
+
+    .newsletter {
+        width: 100%;
+    }
 }
 
-
+.bg-new {
+    background-color: #0c1524;
+}
 
 // Footer
 
 footer {
     background-color: #0c1524;
+}
+
+.rdp {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: em(20);
+    padding-bottom: em(20);
+
+    & p {
+        color: $neutral;
+        padding-bottom: em(10);
+    }
+
+    & .menu-1 ul li {
+        color: $neutral;
+        padding-bottom: em(10);
+    }
+}
+
+.info-1 {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    margin-bottom: em(20);
+    & img {
+        margin-right: em(10);
+        height: 20px;
+        align-self: baseline;
+    }
+}
+
+.contat-1 {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    margin-bottom: em(20);
+    & img {
+        margin-right: em(10);
+        height: 20px;
+        align-self: baseline;
+    }
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+
+    & .fab {
+        color: $neutral;
+    }
+}
+
+@media (max-width: 992px) {
+    .rdp {
+        flex-direction: column;
+    }
+    .social {
+        align-self: center;
+    }
+}
+
+.menu-1, .contat-1:last-child {
+    padding-bottom: em(40);
+}
+
+.copy {
+    padding: em(20);
+    text-align: center;
+& p {
+    
+    color: $neutral;
+    font-size: em(15);
+& a{
+    color: $Cyan;
+}
+}
 }
