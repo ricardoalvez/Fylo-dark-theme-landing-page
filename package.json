@@ -1,14 +1,14 @@
 {
-  "name": "fylo-dark-theme-landing-page-master",
+  "name": "Fylo-dark-theme-landing-page",
   "version": "1.0.0",
+  "lockfileVersion": 2,
+  "requires": true,
+  "author": "",
   "description": "",
+  "keywords": [],
+  "license": "ISC",
   "main": "gulpfile.js",
-  "dependencies": {
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-cli": "^2.2.0",
-    "gulp-sass": "^4.1.0",
-    "surge": "^0.21.3"
-  },
+  "packages": {},
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2"
@@ -16,7 +16,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.8"
+  }
 }
