@@ -216,7 +216,7 @@ header ul li {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 0.0625s0em;
+  gap: 0.625em;
 }
 .quote-text h1 {
   font-size: 2.5em;

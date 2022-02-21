@@ -186,7 +186,7 @@ header {
 .quote-text {
   display: flex;
   flex-direction: column;
-  gap: em(1s0);
+  gap: em(10);
   & h1 {
     font-size: em(40);
     color: $neutral;
