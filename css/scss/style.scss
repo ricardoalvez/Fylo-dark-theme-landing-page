@@ -56,7 +56,6 @@ header {
 
   & .logo {
     width: 120px;
-    // background-color: red;
   }
 
   & ul li {
@@ -124,15 +123,18 @@ header {
 .btn {
   width: 230px;
   height: 54px;
-  background-image: linear-gradient(to right, $Blue, $Cyan);
+  background: linear-gradient(to right, $Blue, $Cyan);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 30px;
   font-weight: $regular;
   font-size: em(16);
-  transition: all 0.3s;
   margin-top: 10px;
+  color: $neutral;
+  &:hover {
+    background: linear-gradient(to left, $Blue, $Cyan);
+  }
 
   & a {
     color: $neutral;

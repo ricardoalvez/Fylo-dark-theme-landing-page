@@ -131,8 +131,8 @@ header ul li {
 .btn {
   width: 230px;
   height: 54px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#339ecc), to(#65e2d9));
-  background-image: linear-gradient(to right, #339ecc, #65e2d9);
+  background: -webkit-gradient(linear, left top, right top, from(#339ecc), to(#65e2d9));
+  background: linear-gradient(to right, #339ecc, #65e2d9);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,9 +145,12 @@ header ul li {
   border-radius: 30px;
   font-weight: 400;
   font-size: 1em;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   margin-top: 10px;
+  color: white;
+}
+.btn:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#339ecc), to(#65e2d9));
+  background: linear-gradient(to left, #339ecc, #65e2d9);
 }
 .btn a {
   color: white;
